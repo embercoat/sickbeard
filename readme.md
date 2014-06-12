@@ -2,6 +2,7 @@ Sick Beard
 =====
 
 *SickBeard TPB  is currently an alpha release. There may be severe bugs in it and at any given time it may not work at all.*
+This is mirror of the latests Sickbeard TPB version. Pleas feel free to fork to continue development or submit pull requests. /SmoiZ
 
 Sick Beard TPB is a PVR for torrent and newsgroup users. It watches for new episodes of your favorite shows and when they are posted it downloads them, sorts and renames them, and optionally generates metadata for them. It retrieves show information from theTVDB.com and TVRage.com.
 
