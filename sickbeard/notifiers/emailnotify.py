@@ -44,6 +44,8 @@ class EmailNotifier:
             self._sendmail(host, port, smtp_from, use_tls, user, pwd, [to], msg, True)
             return True
         except Exception as e:
+            print "47: "
+            print e.message
             return False
 
     def notify_snatch(self, ep_name, title="Snatched:"):
@@ -165,9 +167,14 @@ class EmailNotifier:
         if use_tls == '1' or use_tls == True:
             srv.starttls()
             logger.log('Sent STARTTLS command!', logger.DEBUG)
+        logger.log('USER: %s (%s), PWD: %s (%s),' % (user, len(user), pwd, len(pwd)), logger.DEBUG)
         if len(user) > 0 and len(pwd) > 0:
-            srv.login(user, pwd)
-            logger.log('Sent LOGIN command!', logger.DEBUG)
+            try:
+                srv.login(str(user), str(pwd))
+                logger.log('Sent LOGIN command!', logger.DEBUG)
+            except Exception as e:
+                logger.log(e.message, logger.DEBUG)
+                
 
         srv.sendmail(smtp_from, to, msg.as_string())
         srv.quit()
