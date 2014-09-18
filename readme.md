@@ -2,6 +2,8 @@ Note: This is a copy of the now defunct fork mr-orange had of SickBeard. Here to
 
 Sick Beard
 =====
+**This is a mirror of the latest Sickbeard TPB version. Please feel free to fork to continue development or submit pull requests.** */SmoiZ*
+
 
 *SickBeard TPB  is currently an alpha release. There may be severe bugs in it and at any given time it may not work at all.*
 
