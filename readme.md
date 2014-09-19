@@ -1,4 +1,4 @@
-Note: This is a copy of the now defunct fork mr-orange had of SickBeard. Here to stop my installation generating errors of missing repo.
+Note: This is a copy of the now defunct fork mr-orange had of SickBeard. I will try to keep it running and maybe even expand on the otherwise excellent platform mr-orange built.
 
 Sick Beard
 =====
